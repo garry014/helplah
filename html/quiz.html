@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="../images/icon.png" />
+    <script src="../script1.java" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="content">
+      <nav>
+        <a href="home.html"><img src="../images/logo.png" alt="logo" style="float:left;"></img></a>
+        <ul>
+          <li><a href="home.html">PICK A LAPTOP</a></li>
+          <li><div class="dropdown">
+            <a href="hardware.html" class="current">LEARN MORE</a>
+            <div class="dropdown-content" class="current">
+              <a href="hardware.html">Hardware</a>
+              <a href="os.html">Operating System</a>
+              <a href="factors.html">Other Factors</a>
+              <a href="concerns.html">Other Concerns</a>
+              <a href="faq.html">FAQ</a>
+              <a href="quiz.html" class="current">Challenge Me!</a>
+            </div></div>
+          </li>
+          <li><a href="reviews.html">REVIEWS</a></li>
+        </ul></nav>
+        <div class="sectionSpace"></div>
+        <div class="subNav"><center><a href="hardware.html">Hardware</a> &nbsp;• &nbsp;<a href="os.html">Operating System</a> &nbsp;• &nbsp;<a href="factors.html">Other Factors</a><br><a href="concerns.html">Other Concerns</a> &nbsp;• &nbsp;<a href="faq.html">FAQ</a> &nbsp;• &nbsp;<a href="quiz.html" class="current">Challenge Me!</a></center><br></div>
+        <center><h1>Challenge me!</center>
+
+      <form action="quizresults.html" method="get">
+        <fieldset>
+          <legend align="center">Quiz</legend>
+          <b><label for="Q1">Johnny is a writer working at a news company. What kind of processor should he get?</label></b><br>
+          <input type="text" name="Q1" value="" placeholder="eg: i9" size="4" pattern="^[IiMm]\d{1}" title="Answer must start with an i or m, and ends with 1 number." required autofocus tabindex="1"><br>
+          <br><b>What is the recommended RAM size for a programmer?</b><br>
+          <input type="radio" name="Q2" value="4GB" required autofocus tabindex="2"> 4GB
+          <input type="radio" name="Q2" value="8GB" required> 8GB
+          <input type="radio" name="Q2" value="16GB" required> 16GB
+          <input type="radio" name="Q2" value="32GB" required> 32GB
+          <br><br>
+          <b>A laptop portability is about...</b><br>
+          <input type="radio" name="Q3" value="Lightweight" required tabindex="3"> Lightweight<br>
+          <input type="radio" name="Q3" value="Fast" required> Fast<br>
+          <input type="radio" name="Q3" value="Performance" required> Performance<br>
+          <input type="radio" name="Q3" value="Connection" required> Connection<br>
+          <br>
+          <b>A gamer typically needs a better Graphics Card. True or False?</b>
+          <br><select id="quiz4" name="Q4" size="1" required tabindex="4">
+            <option value="True">True</option>
+            <option value="False">False</option>
+          </select><br>
+          <br><b>The main difference between Solid State Drive and Hybid Hard Drive is</b>
+          <br><input list="suggestedans" name="Q5" maxlength="30" title="Only 1 word is allowed." pattern='[A-Za-z\\s]*' required tabindex="5">
+            <datalist id="suggestedans">
+              <option value="Graphics"></option>
+              <option value="Lightweight"></option>
+              <option value="Connection"></option>
+              <option value="Speed"></option>
+            </datalist><br>
+
+            <br><button type="submit" id="survey-submit" style="float: right;" tabindex="6">Submit</button>
+            <button class="buttonimg" type="reset" title="Reset all"></button>
+        </fieldset><br>
+      </form>
+      <footer>Copyright &copy;<script type='text/javascript'>var y = new Date();document.write(y.getFullYear());</script> HelpLah, Singapore
+      <br><a href="#">Back to top</a> • <a href="sitemap.html">Sitemap</a></footer>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recommend Me</title>
+    <link rel="shortcut icon" href="../images/icon.png" />
+    <script src="../script1.java" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
+  </head>
+  <body onload="optChange(1)">
+    <div class="content">
+      <nav>
+        <a href="home.html"><img src="../images/logo.png" alt="logo" style="float:left;"></img></a>
+        <ul>
+          <li><a href="home.html" class="current">PICK A LAPTOP</a></li>
+          <li><div class="dropdown">
+            <a href="hardware.html">LEARN MORE</a>
+            <div class="dropdown-content">
+              <a href="hardware.html">Hardware</a>
+              <a href="os.html">Operating System</a>
+              <a href="factors.html">Other Factors</a>
+              <a href="concerns.html">Other Concerns</a>
+              <a href="faq.html">FAQ</a>
+              <a href="quiz.html">Challenge Me!</a>
+            </div></div>
+          </li>
+          <li><a href="reviews.html">REVIEWS</a></li>
+        </ul></nav>
+        <div class="sectionSpace"></div>
+        <table class="center">
+              <tr>
+                <td colspan="2"><label id="quest">This page will only work with Javascript. Please enable your javascript and refresh the page. Thanks</label>
+                </td>
+              </tr>
+              <tr>
+                <td><div class="radio">
+                        <input type="radio" class="radio" id='o1' name="option" value="Price" autofocus onclick="optClick()"><label for="o1" id="rb1">Default1</label>
+                    </div>
+                </td>
+                <td><div class="radio">
+                        <input type="radio" class="radio" id='o2' name="option" value="Price" onclick="optClick()"><label for="o2" id="rb2">Default2</label>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><p id="help1"></p></td>
+              </tr>
+              <tr>
+                <td><button id="back" tabindex="0" title="To go back, please use this button." onclick="optChange(0)">Back</button></td>
+                <td><button onclick="submitResults()" id="submit" style="float: right;">Submit</button></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td style="text-align:right"><p id="p1">Page 1 out of 5</p></td>
+              </tr>
+            </table>
+      <br><footer>Copyright &copy;<script type='text/javascript'>var y = new Date();document.write(y.getFullYear());</script> HelpLah, Singapore
+      <br><a href="#">Back to top</a></footer>
+    </div>
+  </body>
+</html>
